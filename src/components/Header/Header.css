@@ -1,0 +1,143 @@
+/* @import url("../../assets/Brand/BrandColor.css"); */
+:root {
+    --taupe-brown: #58413d;
+    --golden-ochre: #7e5700;
+    --pure-white: #ffffff;
+    --dark-espresso: #221a16;
+    --mahogany-red: #7a1401;
+    --warm-taupe: #8c716b;
+    --dusty-rose-cream: #f6e5de;
+    --navajo-white: #ffdead;
+    --salmon-coral: #ffb4a4;
+    --soft-coral-tint: #fff1eb;
+    --dark-forest-green: #184530;
+    --pale-warm-white: #fff8f6;
+    --pure-black: #000000;
+    --chocolate-amber: #281900;
+    --light-mint-green: #bdeecf;
+    --pale-dusty-rose: #e7d7d0;
+    --pale-rose-beige: #f0dfd8;
+    --peach-cream: #fceae4;
+    --soft-warm-white: #fff8f6;
+    --deep-pine-green: #002112;
+    --charcoal-brown: #382e2a;
+    --rust-red: #9b2c16;
+    --dusty-rose-pink: #dfbfb9;
+    --light-coral-pink: #ffb7a8;
+    --soft-peach-yellow: #ffdead;
+    --creamy-peach: #ffede6;
+  }
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.header {
+    width: 100%;
+    background: var(--pale-warm-white);
+    border-bottom: 1px solid var(--pale-dusty-rose);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    max-width: 1400px;
+    min-height: 60px;
+    margin: auto;
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  
+  .logo-link {
+    color: var(--mahogany-red);
+    text-decoration: none;
+    min-width: 125px;
+  }
+  
+  .logo {
+    margin: 0;
+    color: var(--mahogany-red);
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex: 1;
+  }
+  
+  .nav-link {
+    color: var(--dark-espresso);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    transition: color .2s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--mahogany-red);
+  }
+  
+  .cart-summary {
+    min-width: 115px;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--dusty-rose-cream);
+    border-radius: 10px;
+    color: var(--dark-espresso);
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .cart-info {
+    background-color: var(--dark-forest-green);
+    color: var(--pure-white);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .cart-total {
+    color: var(--golden-ochre);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .logo-link {
+      width: 100%;
+    }
+  
+    .navbar {
+      order: 3;
+      width: 100%;
+      overflow-x: auto;
+      justify-content: flex-start;
+      padding-bottom: 5px;
+    }
+  
+    .nav-link {
+      white-space: nowrap;
+    }
+  }

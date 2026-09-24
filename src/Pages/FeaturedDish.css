@@ -1,0 +1,158 @@
+:root {
+    --taupe-brown: #58413d;
+    --golden-ochre: #7e5700;
+    --pure-white: #ffffff;
+    --dark-espresso: #221a16;
+    --mahogany-red: #7a1401;
+    --warm-taupe: #8c716b;
+    --dusty-rose-cream: #f6e5de;
+    --navajo-white: #ffdead;
+    --salmon-coral: #ffb4a4;
+    --soft-coral-tint: #fff1eb;
+    --dark-forest-green: #184530;
+    --pale-warm-white: #fff8f6;
+    --pure-black: #000000;
+    --chocolate-amber: #281900;
+    --light-mint-green: #bdeecf;
+    --pale-dusty-rose: #e7d7d0;
+    --pale-rose-beige: #f0dfd8;
+    --peach-cream: #fceae4;
+    --rust-red: #9b2c16;
+    }
+.FeaturedDish {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: var(--pale-warm-white);
+    color: var(--dark-espresso);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(34, 26, 22, 0.08);
+}
+
+.FeaturedDish h2 {
+    margin-bottom: 15px;
+    color: var(--mahogany-red);
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.FeaturedDish > p {
+    margin-bottom: 20px;
+    color: var(--charcoal-brown);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.FeaturedDish .price {
+    color: var(--mahogany-red);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.FeaturedDish .section {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: var(--pure-white);
+    border: 1px solid var(--pale-dusty-rose);
+    border-radius: 10px;
+}
+
+.FeaturedDish .section h3,
+.FeaturedDish .checkout-section h3 {
+    margin-bottom: 18px;
+    color: var(--dark-espresso);
+    font-size: 18px;
+}
+
+.FeaturedDish .section button {
+    margin: 5px 8px 5px 0;
+    padding: 11px 18px;
+    border: 1px solid var(--mahogany-red);
+    border-radius: 7px;
+    background-color: var(--pure-white);
+    color: var(--mahogany-red);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.FeaturedDish .section button:hover {
+    background-color: var(--mahogany-red);
+    color: var(--pure-white);
+}
+
+.FeaturedDish .checkout-section {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: var(--deep-pine-green);
+    border-radius: 10px;
+    color: var(--pure-white);
+}
+
+.FeaturedDish .checkout-section h3 {
+    color: var(--golden-ochre);
+}
+
+.FeaturedDish .checkout-section > button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--pure-white);
+    color: var(--mahogany-red);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.FeaturedDish .checkout-section > button:hover {
+    background-color: var(--golden-ochre);
+    color: var(--deep-pine-green);
+}
+
+.FeaturedDish .checkout-section span {
+    display: inline-block;
+    min-width: 45px;
+    text-align: center;
+    color: var(--pure-white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.FeaturedDish .checkout-section > br + br + button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px 20px;
+    background-color: var(--golden-ochre);
+    color: var(--deep-pine-green);
+    font-size: 16px;
+}
+
+.FeaturedDish .checkout-section > br + br + button:hover {
+    background-color: var(--pure-white);
+    color: var(--mahogany-red);
+}
+
+@media (max-width: 768px) {
+    .FeaturedDish {
+        width: 92%;
+        margin: 25px auto;
+        padding: 25px;
+    }
+
+    .FeaturedDish h2 {
+        font-size: 26px;
+    }
+
+    .FeaturedDish .section {
+        padding: 18px;
+    }
+
+    .FeaturedDish .section button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .FeaturedDish .checkout-section > button {
+        min-width: 42px;
+    }
+}

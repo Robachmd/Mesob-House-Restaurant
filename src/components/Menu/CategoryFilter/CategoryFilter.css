@@ -1,0 +1,59 @@
+:root {
+  --taupe-brown: #58413d;
+  --golden-ochre: #7e5700;
+  --pure-white: #ffffff;
+  --dark-espresso: #221a16;
+  --mahogany-red: #7a1401;
+  --warm-taupe: #8c716b;
+  --dusty-rose-cream: #f6e5de;
+  --navajo-white: #ffdead;
+  --salmon-coral: #ffb4a4;
+  --soft-coral-tint: #fff1eb;
+  --dark-forest-green: #184530;
+  --pale-warm-white: #fff8f6;
+  --pure-black: #000000;
+  --chocolate-amber: #281900;
+  --light-mint-green: #bdeecf;
+  --pale-dusty-rose: #e7d7d0;
+  --pale-rose-beige: #f0dfd8;
+  --peach-cream: #fceae4;
+  --rust-red: #9b2c16;
+  }
+.category-filter {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 25px auto;
+}
+.category-filter-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.category-filter-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--pale-rose-beige);
+  color: var(--dark-espresso);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.category-filter-button.active {
+  background-color: var(--mahogany-red);
+  color: var(--pure-white);
+}
+
+.category-filter-button:hover:not(.active) {
+  background-color: var(--peach-cream);
+}
+
+.category-filter-button span {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-left: 3px;
+}
