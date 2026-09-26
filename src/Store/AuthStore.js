@@ -20,11 +20,10 @@ export const useAuthStore = create((set) => ({
         if (!savedUser) {
             return { success: false, message: "Please register first." };
         }
-
         const user = JSON.parse(savedUser);
-
         if (loginData.loginType === "email" && loginData.email !== user.email) {
-            return { success: false, message: "Email is incorrect." };
+            return { success: false, 
+                message: "Email is incorrect." };
         }
 
         if (loginData.loginType === "phone" && loginData.phone !== user.phone) {
@@ -37,9 +36,7 @@ export const useAuthStore = create((set) => ({
 
         localStorage.setItem("mesobLoggedIn", "true");
 
-        set({
-            user,
-            isLoggedIn: true
+        set({ user, isLoggedIn: true
         });
 
         return { success: true };
